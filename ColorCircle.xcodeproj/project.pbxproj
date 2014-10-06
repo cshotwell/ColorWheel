@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3DF595519E083B3005CB8DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DF595419E083B3005CB8DD /* AppDelegate.swift */; };
+		C3DF595719E083B3005CB8DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DF595619E083B3005CB8DD /* ViewController.swift */; };
+		C3DF595A19E083B3005CB8DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3DF595819E083B3005CB8DD /* Main.storyboard */; };
+		C3DF595C19E083B3005CB8DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3DF595B19E083B3005CB8DD /* Images.xcassets */; };
+		C3DF595F19E083B3005CB8DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3DF595D19E083B3005CB8DD /* LaunchScreen.xib */; };
+		C3DF596B19E083B3005CB8DD /* ColorCircleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DF596A19E083B3005CB8DD /* ColorCircleTests.swift */; };
+		C3DF597A19E08440005CB8DD /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF597919E08440005CB8DD /* libEstimoteSDK.a */; };
+		C3DF597C19E0847D005CB8DD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF597B19E0847D005CB8DD /* CoreBluetooth.framework */; };
+		C3DF597E19E08485005CB8DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF597D19E08485005CB8DD /* SystemConfiguration.framework */; };
+		C3DF598019E0848D005CB8DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF597F19E0848D005CB8DD /* Foundation.framework */; };
+		C3DF598219E08494005CB8DD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3DF598119E08494005CB8DD /* CoreLocation.framework */; };
+		C3DF598719E0878C005CB8DD /* EstimoteSDK in Resources */ = {isa = PBXBuildFile; fileRef = C3DF598619E0878C005CB8DD /* EstimoteSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3DF596519E083B3005CB8DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3DF594719E083B3005CB8DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3DF594E19E083B3005CB8DD;
+			remoteInfo = ColorCircle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3DF594F19E083B3005CB8DD /* ColorCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DF595319E083B3005CB8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DF595419E083B3005CB8DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3DF595619E083B3005CB8DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3DF595919E083B3005CB8DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3DF595B19E083B3005CB8DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3DF595E19E083B3005CB8DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C3DF596419E083B3005CB8DD /* ColorCircleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorCircleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DF596919E083B3005CB8DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3DF596A19E083B3005CB8DD /* ColorCircleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircleTests.swift; sourceTree = "<group>"; };
+		C3DF597919E08440005CB8DD /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
+		C3DF597B19E0847D005CB8DD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		C3DF597D19E08485005CB8DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C3DF597F19E0848D005CB8DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3DF598119E08494005CB8DD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C3DF598519E08550005CB8DD /* Estimote-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Estimote-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3DF598619E0878C005CB8DD /* EstimoteSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EstimoteSDK; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3DF594C19E083B3005CB8DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DF597A19E08440005CB8DD /* libEstimoteSDK.a in Frameworks */,
+				C3DF598219E08494005CB8DD /* CoreLocation.framework in Frameworks */,
+				C3DF598019E0848D005CB8DD /* Foundation.framework in Frameworks */,
+				C3DF597E19E08485005CB8DD /* SystemConfiguration.framework in Frameworks */,
+				C3DF597C19E0847D005CB8DD /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DF596119E083B3005CB8DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3DF594619E083B3005CB8DD = {
+			isa = PBXGroup;
+			children = (
+				C3DF598619E0878C005CB8DD /* EstimoteSDK */,
+				C3DF598519E08550005CB8DD /* Estimote-Bridging-Header.h */,
+				C3DF597419E0840D005CB8DD /* Frameworks */,
+				C3DF595119E083B3005CB8DD /* ColorCircle */,
+				C3DF596719E083B3005CB8DD /* ColorCircleTests */,
+				C3DF595019E083B3005CB8DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3DF595019E083B3005CB8DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3DF594F19E083B3005CB8DD /* ColorCircle.app */,
+				C3DF596419E083B3005CB8DD /* ColorCircleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3DF595119E083B3005CB8DD /* ColorCircle */ = {
+			isa = PBXGroup;
+			children = (
+				C3DF595419E083B3005CB8DD /* AppDelegate.swift */,
+				C3DF595619E083B3005CB8DD /* ViewController.swift */,
+				C3DF595819E083B3005CB8DD /* Main.storyboard */,
+				C3DF595B19E083B3005CB8DD /* Images.xcassets */,
+				C3DF595D19E083B3005CB8DD /* LaunchScreen.xib */,
+				C3DF595219E083B3005CB8DD /* Supporting Files */,
+			);
+			path = ColorCircle;
+			sourceTree = "<group>";
+		};
+		C3DF595219E083B3005CB8DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3DF595319E083B3005CB8DD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3DF596719E083B3005CB8DD /* ColorCircleTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3DF596A19E083B3005CB8DD /* ColorCircleTests.swift */,
+				C3DF596819E083B3005CB8DD /* Supporting Files */,
+			);
+			path = ColorCircleTests;
+			sourceTree = "<group>";
+		};
+		C3DF596819E083B3005CB8DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3DF596919E083B3005CB8DD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3DF597419E0840D005CB8DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3DF598119E08494005CB8DD /* CoreLocation.framework */,
+				C3DF597F19E0848D005CB8DD /* Foundation.framework */,
+				C3DF597D19E08485005CB8DD /* SystemConfiguration.framework */,
+				C3DF597B19E0847D005CB8DD /* CoreBluetooth.framework */,
+				C3DF597919E08440005CB8DD /* libEstimoteSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3DF594E19E083B3005CB8DD /* ColorCircle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DF596E19E083B3005CB8DD /* Build configuration list for PBXNativeTarget "ColorCircle" */;
+			buildPhases = (
+				C3DF594B19E083B3005CB8DD /* Sources */,
+				C3DF594C19E083B3005CB8DD /* Frameworks */,
+				C3DF594D19E083B3005CB8DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorCircle;
+			productName = ColorCircle;
+			productReference = C3DF594F19E083B3005CB8DD /* ColorCircle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3DF596319E083B3005CB8DD /* ColorCircleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3DF597119E083B3005CB8DD /* Build configuration list for PBXNativeTarget "ColorCircleTests" */;
+			buildPhases = (
+				C3DF596019E083B3005CB8DD /* Sources */,
+				C3DF596119E083B3005CB8DD /* Frameworks */,
+				C3DF596219E083B3005CB8DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3DF596619E083B3005CB8DD /* PBXTargetDependency */,
+			);
+			name = ColorCircleTests;
+			productName = ColorCircleTests;
+			productReference = C3DF596419E083B3005CB8DD /* ColorCircleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3DF594719E083B3005CB8DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = LeanDog;
+				TargetAttributes = {
+					C3DF594E19E083B3005CB8DD = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					C3DF596319E083B3005CB8DD = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = C3DF594E19E083B3005CB8DD;
+					};
+				};
+			};
+			buildConfigurationList = C3DF594A19E083B3005CB8DD /* Build configuration list for PBXProject "ColorCircle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3DF594619E083B3005CB8DD;
+			productRefGroup = C3DF595019E083B3005CB8DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3DF594E19E083B3005CB8DD /* ColorCircle */,
+				C3DF596319E083B3005CB8DD /* ColorCircleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3DF594D19E083B3005CB8DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DF595A19E083B3005CB8DD /* Main.storyboard in Resources */,
+				C3DF595F19E083B3005CB8DD /* LaunchScreen.xib in Resources */,
+				C3DF595C19E083B3005CB8DD /* Images.xcassets in Resources */,
+				C3DF598719E0878C005CB8DD /* EstimoteSDK in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DF596219E083B3005CB8DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3DF594B19E083B3005CB8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DF595719E083B3005CB8DD /* ViewController.swift in Sources */,
+				C3DF595519E083B3005CB8DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3DF596019E083B3005CB8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3DF596B19E083B3005CB8DD /* ColorCircleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3DF596619E083B3005CB8DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3DF594E19E083B3005CB8DD /* ColorCircle */;
+			targetProxy = C3DF596519E083B3005CB8DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3DF595819E083B3005CB8DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DF595919E083B3005CB8DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3DF595D19E083B3005CB8DD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3DF595E19E083B3005CB8DD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3DF596C19E083B3005CB8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3DF596D19E083B3005CB8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3DF596F19E083B3005CB8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/EstimoteSDK/Headers",
+				);
+				INFOPLIST_FILE = ColorCircle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EstimoteSDK",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Estimote-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		C3DF597019E083B3005CB8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/EstimoteSDK/Headers",
+				);
+				INFOPLIST_FILE = ColorCircle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EstimoteSDK",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Estimote-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		C3DF597219E083B3005CB8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ColorCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorCircle.app/ColorCircle";
+			};
+			name = Debug;
+		};
+		C3DF597319E083B3005CB8DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ColorCircleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorCircle.app/ColorCircle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3DF594A19E083B3005CB8DD /* Build configuration list for PBXProject "ColorCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DF596C19E083B3005CB8DD /* Debug */,
+				C3DF596D19E083B3005CB8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DF596E19E083B3005CB8DD /* Build configuration list for PBXNativeTarget "ColorCircle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DF596F19E083B3005CB8DD /* Debug */,
+				C3DF597019E083B3005CB8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3DF597119E083B3005CB8DD /* Build configuration list for PBXNativeTarget "ColorCircleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3DF597219E083B3005CB8DD /* Debug */,
+				C3DF597319E083B3005CB8DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3DF594719E083B3005CB8DD /* Project object */;
+}
