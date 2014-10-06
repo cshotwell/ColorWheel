@@ -1,0 +1,3 @@
+To use, get the major id's of 3 estimotes. Assign each to a RGB Color in the viewcontroller.
+
+Set the distance between each beacon in the viewcontroller.
