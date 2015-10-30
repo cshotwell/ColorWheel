@@ -12,7 +12,7 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate
 {
 
     let beaconManager : ESTBeaconManager = ESTBeaconManager()
-    let BEACONS : [Int : String] =
+    let BEACONS : [NSNumber : String] =
     [   45711 : "RED",
         45031 : "GREEN",
         34611 : "BLUE" ]
@@ -28,15 +28,16 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate
         // Do any additional setup after loading the view, typically from a nib.
         beaconManager.delegate = self
     
-        var beaconRegion : ESTBeaconRegion = ESTBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D"), identifier: "regionName")
+        var beaconRegion : ESTBeaconRegion = ESTBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!, identifier: "regionName")
         
         beaconManager.startEstimoteBeaconsDiscoveryForRegion(beaconRegion)
 
     }
+
     
-    func beaconManager(manager: ESTBeaconManager!, didDiscoverBeacons beacons: [ESTBeacon]!, inRegion region: ESTBeaconRegion!) {
-        if (beacons.count > 0) {
-            updateColorValues(beacons)
+func beaconManager(manager: ESTBeaconManager!, didDiscoverBeacons beacons: [AnyObject]!, inRegion region: ESTBeaconRegion!) {
+    if (beacons.count > 0) {
+            updateColorValues(beacons as! [ESTBeacon])
             updateBackgroundColor()
         }
     }
@@ -45,19 +46,18 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate
         
         for i in 0..<beacons.count {
             var intensity : Double = findColorIntensity(estimateBeaconDistance(beacons[i]))
-            
-            switch BEACONS[beacons[i].major]! {
-            case "RED":
+            switch BEACONS[beacons[i].major] as String? {
+            case "RED"?:
                 redValue = intensity
-            case "GREEN":
+            case "GREEN"?:
                 greenValue = intensity
-            case "BLUE":
+            case "BLUE"?:
                 blueValue = intensity
             default:
-                println("nothing")
+                print("nothing")
             }
-            println("\(beacons[i].rssi) \(beacons[i].measuredPower) \(BEACONS[beacons[i].major])")
-            println("\(estimateBeaconDistance(beacons[i] as ESTBeacon))")
+//            println("\(beacons[i].rssi) \(beacons[i].measuredPower) \(BEACONS[beacons[i].major])")
+            print("\(estimateBeaconDistance(beacons[i] as ESTBeacon))")
         }
 
     }
@@ -73,7 +73,9 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate
     }
     
     func estimateBeaconDistance(beacon: ESTBeacon) -> Double {
-        var ratio_db = Double(beacon.measuredPower - beacon.rssi);
+        let ratio:Int = beacon.measuredPower as Int - beacon.rssi
+        
+        var ratio_db = Double(ratio);
         
         var lhs = 10.0
         var rhs = ratio_db / 10.0
